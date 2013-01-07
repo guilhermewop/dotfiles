@@ -1,0 +1,14 @@
+[user]
+	name = Guilherme W. O. Pereira
+	email = guilhermewop@gmail.com
+[core]
+	editor = vim
+[merge]
+	tool = vimdiff
+[github]
+	user = guilhermewop
+	token = 6919d8f0a87569684ec39965db0c66b1
+[http]
+        postBuffer = 524288000
+[color]
+	ui = auto
