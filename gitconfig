@@ -3,8 +3,9 @@
 	email = guilhermewop@gmail.com
 [core]
 	editor = vim
+	excludesfile = /home/gwopereira/.gitignore_global
 [merge]
-	tool = vimdiff
+	tool = diffmerge
 [github]
 	user = guilhermewop
 	token = 6919d8f0a87569684ec39965db0c66b1
@@ -12,3 +13,17 @@
         postBuffer = 524288000
 [color]
 	ui = auto
+[mergetool "diffmerge"]
+	cmd = diffmerge --merge --result=$MERGED $LOCAL $BASE $REMOTE
+	trustExitCode = true
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+        tags = tag -l
+        branches = branch -a
+        remotes = remote -v
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	hist2 = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	hist3 = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
