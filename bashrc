@@ -106,7 +106,4 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-alias zf='/usr/share/php5/ZendFramework-1.12.0-minimal/bin/zf.sh'
-
-
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
