@@ -1,16 +1,15 @@
 [user]
-	name = Guilherme W. O. Pereira
-	email = guilhermewop@gmail.com
+	name = Guilherme William
+	email = guilherme.william@locaweb.com.br
 [core]
+  #editor = vim
+	excludesfile = /home/guilhermewillian/.gitignore_global
+  #editor = atom --wait
 	editor = vim
-	excludesfile = /home/gwopereira/.gitignore_global
 [merge]
 	tool = diffmerge
-[github]
-	user = guilhermewop
-	token = 6919d8f0a87569684ec39965db0c66b1
 [http]
-        postBuffer = 524288000
+  postBuffer = 524288000
 [color]
 	ui = auto
 [mergetool "diffmerge"]
@@ -21,9 +20,11 @@
 	ci = commit
 	st = status
 	br = branch
-        tags = tag -l
-        branches = branch -a
-        remotes = remote -v
+  tags = tag -l
+  branches = branch -a
+  remotes = remote -v
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 	hist2 = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	hist3 = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+[push]
+	default = matching
